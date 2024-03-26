@@ -1,0 +1,16 @@
+.sortIdeasWrapper {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: end;
+
+  .sortText {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ffffff;
+  }
+
+  select {
+    border-radius: 4px;
+    padding: 2px;
+  }
+}

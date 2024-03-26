@@ -1,0 +1,56 @@
+.IdeaTile {
+  background-color: #101204;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+
+  input {
+    background: #22272b;
+    border: 0;
+    margin-bottom: 12px;
+    padding: 4px;
+    color: #ddd;
+  }
+
+  textarea {
+    background: #22272b;
+    border: 0;
+    margin-bottom: 12px;
+    max-width: 100%;
+    min-height: 80px;
+    padding: 4px;
+    width: 100%;
+    color: #ddd;
+  }
+
+  button {
+    background-color: hsl(0, 72%, 50%);
+    border-radius: 4px;
+    padding: 4px;
+    max-width: 64px;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .bottomRowWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dateWrapper {
+    color: #ddd;
+    font-size: 14px;
+  }
+
+  .formError {
+    color: hsl(0, 72%, 50%);
+    margin: -6px 0 12px 0;
+    font-size: 14px;
+  }
+}
