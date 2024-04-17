@@ -3,11 +3,7 @@ import './assets/global.css';
 import IdeaBoard from './components/IdeaBoard/IdeaBoard';
 
 function App() {
-  return (
-    <>
-      <IdeaBoard />
-    </>
-  );
+  return <IdeaBoard />;
 }
 
 export default App;

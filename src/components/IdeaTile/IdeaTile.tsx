@@ -91,11 +91,11 @@ export default function IdeaTile({
           Title is required
         </p>
       )}
-      <label htmlFor='Description' className='sr-only'>
+      <label htmlFor='description' className='sr-only'>
         Description
       </label>
       <textarea
-        id=''
+        id='description'
         placeholder='Description'
         defaultValue={idea.description}
         {...register('description', {
@@ -122,7 +122,7 @@ export default function IdeaTile({
         <button onClick={() => deleteIdea(idea.id)}>Delete</button>
         <div className={styles.dateWrapper}>
           Last updated:{' '}
-          <time dateTime='2024-03-18'>
+          <time dateTime={dayjs(idea.lastUpdated).format('YYYY-MM-DD')}>
             {dayjs(idea.lastUpdated).format('DD/MM HH:mm:ss')}
           </time>
         </div>

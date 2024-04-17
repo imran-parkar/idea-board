@@ -6,20 +6,12 @@ import { v4 as uuidv4 } from 'uuid';
 import { Idea } from '../../types/index.ts';
 
 export default function IdeaBoard() {
-  const savedIdeas = localStorage.getItem('ideas');
-  const [ideas, setIdeas] = useState<Idea[]>(
-    savedIdeas ? JSON.parse(savedIdeas) : []
+  const [ideas, setIdeas] = useState<Idea[]>(() =>
+    JSON.parse(localStorage.getItem('ideas') || '[]')
   );
   const [sortOrder, setSortOrder] = useState<'alphabetical' | 'lastUpdated'>(
     'lastUpdated'
   );
-
-  useEffect(() => {
-    const savedIdeas = localStorage.getItem('ideas');
-    if (savedIdeas) {
-      setIdeas(JSON.parse(savedIdeas));
-    }
-  }, []);
 
   useEffect(() => {
     localStorage.setItem('ideas', JSON.stringify(ideas));
