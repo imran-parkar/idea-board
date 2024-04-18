@@ -19,6 +19,10 @@ When working through the task you should treat it as if you're writing real worl
 - Add a character countdown as the user is approaching the limit of their description text.
 - Add an unobtrusive notification when an update is made to a tile.
 
+## Demo
+
+https://idea-board-lovat.vercel.app/
+
 ## Setup
 
 Install: `npm install` or `pnpm install`
